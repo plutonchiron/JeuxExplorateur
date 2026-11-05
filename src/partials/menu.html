@@ -1,0 +1,17 @@
+  <!-- MENU DU JEU (choix du niveau) -->
+  <section id="menu" class="screen active">
+    <div class="topbar"><a class="chip" href="{{backHref}}">{{backLabel}}</a><button class="chip who" title="Changer de joueur"></button></div>
+    <div class="menu-in">
+      <h1 class="logo"><span class="globe">{{emoji}}</span><span class="g">{{name}}</span></h1>
+      <p class="tagline">{{tagline}}</p>
+      <div class="{{levelsClass}}" id="{{levelsId}}"></div>
+{{assist}}
+      <p class="how">{{how}}</p>
+      <div class="menu-foot">
+        <button class="chip" id="btnBoardGame">🏆 Classement</button>
+        <button class="chip themeBtn" title="Changer de thème"></button>
+        <button class="chip muteBtn" title="Son"></button>
+      </div>
+    </div>
+  </section>
+

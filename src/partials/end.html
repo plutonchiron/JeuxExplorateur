@@ -1,0 +1,39 @@
+  <!-- FIN / CLASSEMENT -->
+  <section id="end" class="screen">
+    <div class="endwrap" id="endwrap">
+      <div class="card resultcard">
+        <h2 id="endTitle">⏰ Temps écoulé !</h2>
+        <div class="big" id="endScore">0</div>
+        <div class="unit" id="endUnit"></div>
+        <div class="errs" id="endErr"></div>
+        <div class="msg" id="endMsg"></div>
+        <div class="badge" id="endRecord" hidden>🎉 Nouveau record !</div>
+        <div class="savedmsg" id="savedMsg"></div>
+        <div class="actions">
+          <button class="btn" id="btnAgain">🔁 Rejouer</button>
+          <button class="btn alt" id="btnMenu">📋 Menu</button>
+          <button class="btn alt" id="btnHome">🏠 Accueil</button>
+        </div>
+      </div>
+      <div class="card boardcard">
+        <h2>🏆 Meilleurs scores</h2>
+        <div class="tabs" id="gtabs"></div>
+        <div class="tabs sub" id="tabs"></div>
+        <div class="podium" id="podium"></div>
+        <ol class="board" id="board"></ol>
+        <div class="actions"><button class="btn alt" id="btnBack">← Retour</button></div>
+        <button class="linkbtn" id="btnClear">Effacer le classement de ce niveau</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOUVEAU RECORD : feu d'artifice + texte animé (affiché par recordFx) -->
+  <div id="recordfx" hidden role="status">
+    <canvas id="fxCanvas"></canvas>
+    <div class="recordtxt">
+      <div class="trophy" aria-hidden="true">🏆</div>
+      <div class="w" id="recW1"></div>
+      <div class="w" id="recW2"></div>
+      <div class="recsub" id="recSub"></div>
+    </div>
+  </div>

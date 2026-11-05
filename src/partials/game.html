@@ -1,0 +1,67 @@
+  <!-- JEU -->
+  <section id="game" class="screen" data-mode="{{mode}}">
+    <div class="hud">
+      <div class="hud-left">
+        <button class="chip" id="btnQuit" title="Retour au menu">🏠 Menu</button>
+        <button class="chip muteBtn" title="Son"></button>
+      </div>
+      <div class="target" id="target"><small id="tLabel">Trouve</small><div class="trow"><img id="tFlag" alt="" hidden><span id="tIcon" aria-hidden="true" hidden></span><b id="tName">…</b></div></div>
+      <div class="stats">
+        <div class="pill" id="scorePill">⭐ <span id="score">0</span></div>
+        <div class="pill" id="timePill">⏱ <span id="time">60</span></div>
+      </div>
+    </div>
+    <div class="bar" id="bar"><i id="barFill"></i></div>
+
+    <!--GEO-->
+    <div class="mapwrap" id="mapwrap">
+      <svg id="map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" preserveAspectRatio="xMidYMid meet" aria-label="{{mapLabel}}"><g id="lands">
+/*PATHS*/
+</g></svg>
+      <div class="tip" id="tip" hidden><img id="tipImg" alt=""><span id="tipName"></span></div>
+      <aside class="info" id="infoBox">
+        <p class="infohint" id="infoHint">🔎 Passe la souris sur la carte, ou touche un endroit, pour découvrir plein de choses !</p>
+        <div id="infoBody" hidden>
+          <img id="infoPhoto" alt="" hidden>
+          <small id="infoCredit"></small>
+          <h3><img id="infoFlag" alt="" hidden><span id="infoName"></span></h3>
+          <dl id="infoList"></dl>
+          <p class="fact" id="infoFact"></p>
+        </div>
+      </aside>
+      <button class="chip skip" id="btnSkip">⏭ Passer</button>
+      <div class="tools">
+        <button id="zIn" title="Zoom +">+</button>
+        <button id="zOut" title="Zoom −">−</button>
+        <button id="zReset" title="Recentrer">⌂</button>
+      </div>
+    </div>
+
+    <!--/GEO-->
+
+    <!--QCM-->
+    <div class="qcm" id="qcm">
+      <div class="mapwrap" id="mapwrap">
+        <svg id="map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" preserveAspectRatio="xMidYMid meet" aria-label="{{mapLabel}}"><g id="lands">
+/*PATHS*/
+</g></svg>
+        <img class="qflag" id="qFlag" alt="Drapeau du pays" hidden>
+      </div>
+      <div class="choices" id="qChoices"></div>
+    </div>
+    <!--/QCM-->
+
+    <!--MATH-->
+    <div class="stage" id="stage">
+      <div class="qcard hide" id="qcard">
+        <div class="eq"><span class="num" id="qa">0</span><span class="op" id="qop">+</span><span class="num" id="qb">0</span><span class="op">=</span><span class="slot empty" id="ans">?</span></div>
+        <div class="frames" id="frames"></div>
+        <div class="hint" id="hint"></div>
+      </div>
+    </div>
+    <div class="pad" id="pad"></div>
+    <!--/MATH-->
+
+    <div class="count" id="count"><div id="countTxt">3</div></div>
+  </section>
+

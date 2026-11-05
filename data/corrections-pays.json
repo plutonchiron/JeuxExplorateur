@@ -1,0 +1,71 @@
+{
+ "BOL": {
+  "cap": "Sucre et La Paz"
+ },
+ "ZAF": {
+  "cap": "Pretoria, Le Cap et Bloemfontein"
+ },
+ "GNQ": {
+  "cap": "Malabo"
+ },
+ "SWZ": {
+  "cap": "Mbabane et Lobamba"
+ },
+ "PRY": {
+  "cap": "Asunción"
+ },
+ "COL": {
+  "cap": "Bogotá"
+ },
+ "BRA": {
+  "cap": "Brasília"
+ },
+ "VAT": {
+  "cap": "Cité du Vatican",
+  "area": 0.44
+ },
+ "NOR": {
+  "cap": "Oslo"
+ },
+ "DNK": {
+  "cap": "Copenhague",
+  "pop": 5960000
+ },
+ "GRL": {
+  "cap": "Nuuk",
+  "pop": 56000
+ },
+ "FSM": {
+  "pop": 115000,
+  "cur": [
+   "dollar des États-Unis"
+  ]
+ },
+ "IND": {
+  "pop": 1430000000,
+  "lang": [
+   "hindi",
+   "anglais"
+  ]
+ },
+ "PAK": {
+  "pop": 240000000
+ },
+ "BIH": {
+  "area": 51209
+ },
+ "MAR": {
+  "lang": [
+   "arabe",
+   "amazighe"
+  ]
+ },
+ "CHE": {
+  "lang": [
+   "allemand",
+   "français",
+   "italien",
+   "romanche"
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "jeux-explorateurs",
+  "version": "1.0.0",
+  "description": "Jeux éducatifs pour enfants : géographie (Géo Explorateurs) et calcul mental (CP). Un seul fichier HTML autonome.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:data": "node scripts/build-data.js",
+    "test": "node tests/calcul-et-menus.mjs && node tests/geo.mjs",
+    "test:calcul": "node tests/calcul-et-menus.mjs",
+    "test:geo": "node tests/geo.mjs",
+    "build:france": "python3 scripts/build-france.py",
+    "build:media": "python3 scripts/build-media.py",
+    "build:info": "python3 scripts/build-info.py"
+  },
+  "devDependencies": {
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "topojson-simplify": "^3.0.3",
+    "world-atlas": "^2.0.2",
+    "world-countries": "^5.1.0",
+    "puppeteer-core": "^25.16.0",
+    "@sparticuz/chromium": "^153.0.0"
+  }
+}
