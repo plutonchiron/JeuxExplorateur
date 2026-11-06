@@ -1,6 +1,6 @@
 // Service worker de l'appli installable : met toutes les pages en cache à l'installation, puis sert le cache d'abord
 // (le jeu fonctionne alors sans réseau). La version change à chaque build : l'ancien cache est alors supprimé.
-const CACHE = 'explorateurs-66156ed957';
+const CACHE = 'explorateurs-24e0029215';
 const FILES = ["./", "index.html", "geographie.html", "calcul.html", "anatomie.html", "geo.html", "departements.html", "capitales.html", "eaux.html", "organes.html", "organes-cm2.html", "os-5eme.html", "squelette.html", "additions.html", "soustractions.html", "multiplications.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png"];
 
 self.addEventListener('install', e => {

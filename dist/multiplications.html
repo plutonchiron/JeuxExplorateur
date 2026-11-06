@@ -393,6 +393,30 @@ html[data-theme="halloween"] .choice.ko{background:#ff5a5f;color:#fff}
 
 /* Squelette réaliste (jeu « Situer les os », 5ème) */
 /*OS5*/.c.bone5,html[data-theme="halloween"] .c.bone5{fill:url(#b5);stroke:rgba(25,20,10,.8);stroke-width:.9px}body[data-page="os5"] .mapwrap{background:radial-gradient(ellipse at 50% 40%,#2E3A4A,#121921 88%);box-shadow:inset 0 0 0 2px #3C4A5C,inset 0 0 60px rgba(0,0,0,.45),var(--shadow)}html[data-theme="halloween"] body[data-page="os5"] .mapwrap{background:radial-gradient(ellipse at 50% 40%,#2E3347,#101320 88%);box-shadow:inset 0 0 0 2px #4a3a6a,inset 0 0 60px rgba(0,0,0,.45),var(--shadow)}/*/OS5*/
+
+/* Téléphones (portrait) et écrans bas (paysage) : menus compacts pour tout voir sans faire défiler. */
+@media(max-width:600px),(max-height:560px){
+  #players,#home,#geoh,#calc,#menu{padding:10px 12px}
+  .tagline{margin:.2em 0 .7em;font-size:clamp(14px,4vw,18px)}
+  .logo{font-size:clamp(28px,8vw,40px)}
+  .menu-foot{margin-top:12px;gap:8px}
+  .how{margin-top:10px;font-size:14px}
+  .bigcards{grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:10px}
+  .bigcard{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center;text-align:left;padding:8px 16px;border-radius:24px;border-bottom-width:6px}
+  .bigcard .emo{grid-row:span 2;font-size:44px;width:56px;text-align:center}
+  .bigcard .zn{margin:0;font-size:20px;line-height:1.15}
+  .bigcard .sub{margin:2px 0 0;font-size:13px;line-height:1.25}
+  .zones{gap:8px}
+  .zone{padding:8px 8px 6px;border-radius:20px;border-bottom-width:5px}
+  .zone .emo{font-size:30px}
+  .zone .zn{font-size:16px;margin-top:2px}
+  .zone .rec{font-size:12px;margin-top:2px}
+  .opcard{padding:10px 12px;border-radius:22px}
+  .lvl{padding:7px 10px;margin-top:6px}
+  .modes{gap:8px;margin-top:10px}
+  .assist{font-size:15px;padding:9px 12px;margin-top:10px}
+  .assisthelp{display:none}
+}
 </style>
 </head>
 <body data-page="mul" data-back="calcul.html">
